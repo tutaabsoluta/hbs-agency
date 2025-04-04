@@ -1,14 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
   content: [
-    "./src/views/**/*.hbs",
-    "./src/public/**/*.html",
-    "./src/public/**/*.js"
+    "./src/views/**/*.{hbs,html,js}",
+    "./src/views/*.{hbs,html,js}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom-blue': '#011627',
+        'secondary': '#00C9E0',
+      },
+      fontFamily: {
+        playfair: ['Playfair Display', 'serif'], 
+      },
+    },
   },
   plugins: [],
-
 }
