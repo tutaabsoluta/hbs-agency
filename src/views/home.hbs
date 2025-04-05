@@ -1,10 +1,31 @@
-<div class="text-center space-y-6">
-  <div class="fixed inset-0 -z-50 w-screen h-screen">
-    <img src="/images/header-image.png" alt="Background" class="w-full h-full object-cover">
+<div class="max-w-[1200px] mx-auto text-white">
+
+{{!-- Section Heading --}}
+  <div class="flex items-center gap-8 py-16">
+    <h2 class="text-white font-bold text-[72px]">Pick your trip</h2>
+    <img src="/images/x.png" alt="">
+    <p class="text-white w-[350px]">Our team put together some trips to you to discover,
+      feel free to discover each of them.</p>
   </div>
-  <h1 class="text-[120px] font-bold text-white mt-12">Night Trips</h1>
-  <h2 class="text-base text-white uppercase -tracking-[-0.1em] font-bold">We got trips for the trippster in you</h2>
-  <p class="text-white text-center w-[643px] mx-auto">Neque, eros commodo, nascetur ullamcorper vitae. Tincidunt ut
-    venenatis, volutpat lorem ut faucibus mauris, quisque. Integer gravida sed quis congue. Vel risus, arcu a viverra
-    leo id pulvinar ultricies. Enim in in in pulvinar nulla sollicitudin. Ullamcorper.</p>
+
+  {{! Trips links }}
+  <div class="relative flex justify-between items-center px-20 pb-2">
+    {{#each trips}}
+    <button class="trip-link text-lg transition text-gray-400" data-index="{{@index}}">
+      {{this}}
+    </button>
+    {{/each}}
+  </div>
+
+  {{! Progress Bar }}
+  <div class="relative w-full h-1 bg-terciary/25">
+    <div id="progress-bar" class="absolute h-1 bg-terciary transition-all duration-300"></div>
+  </div>
+
+  {{! Contenido del viaje }}
+  <div class="mt-4 text-center">
+    <p id="trip-content" class="text-xl">Bienvenido a Chill Adventure</p>
+  </div>
 </div>
+
+<script src="/js/trips.js"></script>

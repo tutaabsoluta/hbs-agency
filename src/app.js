@@ -4,7 +4,7 @@ const path = require('path');
 
 const app = express();
 
-// Configuración de Handlebars
+// Handlebars config
 app.engine('hbs', engine({
   extname: '.hbs',
   defaultLayout: 'main'
@@ -13,13 +13,14 @@ app.engine('hbs', engine({
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
-// Middleware para archivos estáticos
+// Static files middleware
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Ruta principal
+// Main route
 app.get('/', (req, res) => {
   res.render('home', {
-    title: 'Node.js con Handlebars y Tailwind'
+    title: 'Node.js con Handlebars y Tailwind',
+    trips: ["Chill Adventure", "Spooky Times", "Desert Madness", "Out in the wild"]
   });
 });
 
