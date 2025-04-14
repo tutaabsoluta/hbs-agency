@@ -1,6 +1,6 @@
 <div class="max-w-[1200px] mx-auto text-white">
 
-{{!-- Section Heading --}}
+  {{!-- Section Heading --}}
   <div class="flex items-center gap-8 py-16">
     <h2 class="text-white font-bold text-[72px]">Pick your trip</h2>
     <img src="/images/x.png" alt="">
@@ -12,20 +12,32 @@
   <div class="relative flex justify-between items-center px-20 pb-2">
     {{#each trips}}
     <button class="trip-link text-lg transition text-gray-400" data-index="{{@index}}">
-      {{this}}
+      {{this.title}}
     </button>
     {{/each}}
   </div>
 
   {{! Progress Bar }}
   <div class="relative w-full h-1 bg-terciary/25">
-    <div id="progress-bar" class="absolute h-1 bg-terciary transition-all duration-300"></div>
+    <div id="progress-bar" class="absolute h-[3px] bg-terciary transition-all duration-300"></div>
   </div>
 
-  {{! Contenido del viaje }}
-  <div class="mt-4 text-center">
-    <p id="trip-content" class="text-xl">Bienvenido a Chill Adventure</p>
+  {{! Trip content }}
+  <div class="mt-4 text-center flex items-center justify-center gap-32">
+    <div class="w-full max-w-md aspect-[486/607]">
+      <img id="trip-img" class="w-full h-full object-cover" src="{{trips.[0].imgUrl}}" alt="trip image">
+    </div>
+
+    <div class="space-y-16 flex flex-col items-center">
+      <h3 id="trip-heading" class="text-[65px] font-bold"></h3>
+      <p id="trip-content" class="text-xl mt-2 max-w-96"></p>
+      <button class="bg-secondary uppercase w-[282px] h-[65px] py-4 rounded-full font-bold">See our latest offer</button>
+    </div>
   </div>
+
 </div>
 
+<script>
+  window.trips = {{{json trips}}};
+</script>
 <script src="/js/trips.js"></script>

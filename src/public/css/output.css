@@ -600,6 +600,14 @@ video {
   inset: 0px;
 }
 
+.right-4 {
+  right: 1rem;
+}
+
+.top-\[30px\] {
+  top: 30px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -621,16 +629,48 @@ video {
   margin-top: 3rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-\[34px\] {
+  margin-bottom: 34px;
 }
 
 .flex {
   display: flex;
 }
 
+.aspect-\[486\/607\] {
+  aspect-ratio: 486/607;
+}
+
 .h-1 {
   height: 0.25rem;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
+.h-\[3px\] {
+  height: 3px;
 }
 
 .h-auto {
@@ -645,6 +685,22 @@ video {
   height: 100vh;
 }
 
+.h-\[62px\] {
+  height: 62px;
+}
+
+.h-0\.5 {
+  height: 0.125rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-\[65px\] {
+  height: 65px;
+}
+
 .w-\[350px\] {
   width: 350px;
 }
@@ -657,8 +713,40 @@ video {
   width: 100%;
 }
 
+.w-\[167px\] {
+  width: 167px;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[237px\] {
+  width: 237px;
+}
+
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-\[282px\] {
+  width: 282px;
+}
+
 .max-w-\[1200px\] {
   max-width: 1200px;
+}
+
+.max-w-96 {
+  max-width: 24rem;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .flex-col {
@@ -685,10 +773,38 @@ video {
   gap: 2rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
+.gap-32 {
+  gap: 8rem;
+}
+
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-y-16 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -697,6 +813,14 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-\[48px\] {
+  border-radius: 48px;
 }
 
 .bg-custom-blue {
@@ -716,6 +840,16 @@ video {
 
 .bg-terciary\/25 {
   background-color: rgb(65 234 212 / 0.25);
+}
+
+.bg-\[\#00c9e0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 201 224 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -753,14 +887,34 @@ video {
   padding-bottom: 2rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
+.py-\[19px\] {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.px-\[167px\] {
+  padding-left: 167px;
+  padding-right: 167px;
+}
+
+.py-\[62px\] {
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-2 {
@@ -773,6 +927,11 @@ video {
 
 .font-playfair {
   font-family: Playfair Display, serif;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-\[120px\] {
@@ -798,6 +957,10 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[65px\] {
+  font-size: 65px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -808,6 +971,15 @@ video {
 
 .-tracking-\[-0\.1em\] {
   letter-spacing: 0.1em;
+}
+
+.tracking-\[1\.60px\] {
+  letter-spacing: 1.60px;
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
 .text-gray-800 {
@@ -825,9 +997,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-gray-400 {
+.text-gray-700 {
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
 }
 
 .transition {
@@ -846,6 +1018,10 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.\[font-family\:\'Larsseit-Bold\'\2c Helvetica\] {
+  font-family: 'Larsseit-Bold',Helvetica;
 }
 
 @media (min-width: 768px) {
