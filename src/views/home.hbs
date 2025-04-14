@@ -18,20 +18,20 @@
   </div>
 
   {{! Progress Bar }}
-  <div class="relative w-full h-1 bg-terciary/25">
+  <div class="relative w-full h-1 bg-terciary/25 mb-36">
     <div id="progress-bar" class="absolute h-[3px] bg-terciary transition-all duration-300"></div>
   </div>
 
   {{! Trip content }}
   <div class="mt-4 text-center flex items-center justify-center gap-32">
-    <div class="w-full max-w-md aspect-[486/607]">
-      <img id="trip-img" class="w-full h-full object-cover" src="{{trips.[0].imgUrl}}" alt="trip image">
+    <div class="w-1/2 max-w-md aspect-[486/607]">
+      <img id="trip-img" class="w-full h-full object-cover rounded-xl" src="{{trips.[0].imgUrl}}" alt="trip image">
     </div>
 
-    <div class="space-y-16 flex flex-col items-center">
+    <div class="space-y-16 flex flex-col items-start w-1/2">
       <h3 id="trip-heading" class="text-[65px] font-bold"></h3>
-      <p id="trip-content" class="text-xl mt-2 max-w-96"></p>
-      <button class="bg-secondary uppercase w-[282px] h-[65px] py-4 rounded-full font-bold">See our latest offer</button>
+      <p id="trip-content" class="text-[17px] mt-2 max-w-[470px]"></p>
+      <button class="bg-secondary uppercase w-[282px] h-[65px] py-4 rounded-full font-bold shadow-[0_10px_25px_rgba(34,211,238,0.25)]">See our latest offer</button>
     </div>
   </div>
 
