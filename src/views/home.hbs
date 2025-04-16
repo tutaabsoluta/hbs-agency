@@ -1,10 +1,19 @@
+
 <div class="max-w-[1200px] mx-auto text-white">
 
-  {{!-- Section Heading --}}
-  <main>
-
-
-    <div class="flex items-center gap-8 py-16">
+  {{!-- Main Content --}}
+  <main class="relative min-w-screen overflow-x-visible">
+    <img 
+      src="/images/Vector.png" 
+      alt="Decorative Image"
+      class="absolute w-[200vw] left-[-50vw] top-[-6rem] z-0"
+    >
+    <img 
+      src="/images/Vector2.png" 
+      alt="Decorative Image"
+      class="absolute w-[200vw] right-[-50vw] top-[-6rem] z-0"
+    >
+    <div class="flex items-center gap-8 py-16 relative overflow-hidden">
       <h2 class="text-white font-bold text-[72px]">Pick your trip</h2>
       <img src="/images/x.png" alt="Division X">
       <p class="text-white w-[350px]">Our team put together some trips to you to discover,
@@ -77,13 +86,13 @@
       <img src="/images/Dots.png" alt="Dots" class="absolute -left-11 -bottom-14 -z-10">
     </div>
   </main>
+  {{!-- End Main Content --}}
 
   {{!-- About us section --}}
-  <section class="relative mt-40 flex items-center justify-center gap-8">
-
+  <section class="relative mt-72 flex items-center justify-center gap-8">
     {{!-- Text Content --}}
-    <div>
-      <h3 class="text-[72px]">About us</h3>
+    <div class="relative z-10">
+      <h3 class="text-[72px] ">About us</h3>
 
       <div class="space-y-6 max-w-sm">
         <p class="font-bold">We’re a team of four passioned people.</p>
@@ -101,7 +110,7 @@
     </div>
 
     {{!-- Images --}}
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-2 relative z-10">
       <div>
         <img src="/images/1.png" alt="">
       </div>
@@ -117,13 +126,19 @@
     </div>
 
     <div class="absolute -right-20">
-      <img src="/images/Dots2.png" alt="Dots Pattern">
+      <img src="/images/Dots2.png" alt="Dots Pattern" class="relative z-10">
     </div>
 
   </section>
 
+  <img 
+    src="/images/bgimage.png" 
+    alt="Mountain Background" 
+    class="absolute top-[130rem] w-full h-[1600px] object-cover left-0 z-[5] header-fade" 
+  />
+
   {{!-- Testimonials Section --}}
-  <section class="py-52">
+  <section class="mt-24 py-24 px-12 relative z-10 bg-custom-blue">
     <h3 class="text-7xl font-bold text-center">People's thoughts</h3>
     <p class="text-xl text-center mt-8">See what others are saying</p>
   
