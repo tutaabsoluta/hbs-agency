@@ -5,4 +5,9 @@
 .header-fade {
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-  }
+}
+
+.vertical-scroll-text {
+  transform: rotate(270deg);
+  margin-bottom: 20px;
+}
