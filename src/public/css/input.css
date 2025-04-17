@@ -16,9 +16,9 @@
   content: "";
   position: absolute;
   top: 50%;
-  right: -17px; /* ajustalo según se necesite */
+  right: -17px;
   transform: translateY(-50%);
-  width: 36px; /* largo de la línea */
-  height: 2px;  /* grosor */
+  width: 36px;
+  height: 2px;
   background-color: white;
 }

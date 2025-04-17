@@ -1114,12 +1114,9 @@ video {
   position: absolute;
   top: 50%;
   right: -17px;
-  /* ajustalo según se necesite */
   transform: translateY(-50%);
   width: 36px;
-  /* largo de la línea */
   height: 2px;
-  /* grosor */
   background-color: white;
 }
 
