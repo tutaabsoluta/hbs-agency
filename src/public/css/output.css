@@ -624,8 +624,20 @@ video {
   right: -0.75rem;
 }
 
+.-top-8 {
+  top: -2rem;
+}
+
 .left-0 {
   left: 0px;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.left-\[23rem\] {
+  left: 23rem;
 }
 
 .right-0 {
@@ -636,34 +648,6 @@ video {
   top: 130rem;
 }
 
-.top-\[60rem\] {
-  top: 60rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.left-20 {
-  left: 5rem;
-}
-
-.top-8 {
-  top: 2rem;
-}
-
-.left-96 {
-  left: 24rem;
-}
-
-.left-80 {
-  left: 20rem;
-}
-
-.left-\[23rem\] {
-  left: 23rem;
-}
-
 .top-\[17rem\] {
   top: 17rem;
 }
@@ -672,16 +656,8 @@ video {
   top: 50rem;
 }
 
-.-top-16 {
-  top: -4rem;
-}
-
-.left-1\/2 {
-  left: 50%;
-}
-
-.-top-8 {
-  top: -2rem;
+.top-0 {
+  top: 0px;
 }
 
 .-z-10 {
@@ -692,16 +668,12 @@ video {
   z-index: 10;
 }
 
-.z-\[5\] {
-  z-index: 5;
-}
-
-.z-0 {
-  z-index: 0;
-}
-
 .z-20 {
   z-index: 20;
+}
+
+.z-\[5\] {
+  z-index: 5;
 }
 
 .mx-auto {
@@ -757,24 +729,16 @@ video {
   margin-top: -20rem;
 }
 
-.-mt-12 {
-  margin-top: -3rem;
-}
-
-.-mt-\[9rem\] {
-  margin-top: -9rem;
-}
-
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .aspect-\[486\/607\] {
@@ -1007,10 +971,6 @@ video {
   padding: 5rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-6 {
   padding: 1.5rem;
 }
@@ -1132,6 +1092,11 @@ video {
   letter-spacing: 0.05em;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
@@ -1140,6 +1105,11 @@ video {
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity, 1));
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(0 201 224 / var(--tw-text-opacity, 1));
 }
 
 .text-slate-300 {
@@ -1155,16 +1125,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-secondary {
-  --tw-text-opacity: 1;
-  color: rgb(0 201 224 / var(--tw-text-opacity, 1));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .underline {
