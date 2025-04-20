@@ -5,12 +5,6 @@
   {{!-- Main Content --}}
   <main class="relative min-w-screen overflow-x-visible">
 
-  <div class="absolute right-0 top-0">
-    <img src="/images/GimmickLine.png" alt="">
-    <p id="trip-index">0</p>
-    <p id="trip-snippet">{{trips.[0].snippet}}</p>
-  </div>
-
     <div class="flex items-center gap-8 py-16 relative overflow-hidden">
       <h2 class="text-white font-bold text-[72px]">Pick your trip</h2>
       <img src="/images/x.png" alt="Division X">
@@ -48,6 +42,12 @@
         <button
           class="relative bg-secondary uppercase w-[282px] h-[65px] py-4 rounded-full font-bold shadow-[0_10px_25px_rgba(34,211,238,0.25)] menu-button">See
           our latest offer</button>
+      </div>
+
+      <div class="absolute flex flex-col items-start top-[14rem] left-[-4rem] text-2xl">
+        <img src="/images/GimmickLine.png" alt="">
+        <p id="trip-id" class="font-bold text-secondary mb-2"></p>
+        <p id="trip-snippet" class="uppercase font-bold tracking-widest"></p>
       </div>
 
       {{!-- Socials --}}

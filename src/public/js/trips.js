@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const tripContent = document.getElementById("trip-content");
   const tripHeading = document.getElementById("trip-heading");
   const tripImg = document.getElementById("trip-img");
+  const tripId = document.getElementById('trip-id')
+  const tripSnippet = document.getElementById('trip-snippet');
 
   const setActiveLink = (index) => {
     tripLinks.forEach((btn, i) => {
@@ -16,12 +18,22 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.classList.add("text-gray-400");
       }
     });
+    
 
     const trip = trips[index];
     tripContent.textContent = trip.description;
     tripHeading.textContent = trip.title;
     tripImg.src = trip.imgUrl;
     tripImg.alt = trip.title;
+    tripId.textContent = `0 ${trip.id}.`;
+    
+    const snippetWords = trip.snippet.split(' ');
+    if (snippetWords.length >= 2) {
+      snippetWords.splice(2, 0, '<br/>');
+    }
+    tripSnippet.innerHTML = snippetWords.join(' ');
+
+    
 
     progressBar.style.width = `${100 / trips.length}%`;
     progressBar.style.left = `${(100 / trips.length) * index}%`;
