@@ -6,7 +6,7 @@
     <img src="/images/header-image.png" alt="Background" class="w-full h-full object-cover header-fade">
   </div>
 
-  {{!-- Main Content --}}
+  {{!-- Header --}}
   <div class="relative h-screen overflow-hidden">
 
     <div
@@ -19,7 +19,7 @@
         leo id pulvinar ultricies. Enim in in in pulvinar nulla sollicitudin. Ullamcorper.</p>
     </div>
 
-    <div class=" flex justify-between -mt-36 xl:-mt-56 2xl:-mt-32">
+    <div class=" flex justify-between -mt-36 md:-mt-52 xl:-mt-56 2xl:-mt-32 mr-8">
       <div class="flex flex-col items-center justify-center">
         <p class="vertical-scroll-text uppercase text-white text-sm tracking-wider">
           Scroll
@@ -50,16 +50,16 @@
     </div>
   </div>
 
-  <main class="relative min-w-screen overflow-x-visible">
-    <div class="flex items-center gap-8 py-16 relative overflow-hidden">
+  {{!-- Trips --}}
+  <section class="relative min-w-screen overflow-x-visible">
+    <div class="flex items-center gap-8 md:px-12 py-16 relative overflow-hidden">
       <h2 class="text-white font-bold text-[72px]">Pick your trip</h2>
       <img src="/images/x.png" alt="Division X">
       <p class="text-white w-[350px]">Our team put together some trips to you to discover,
         feel free to discover each of them.</p>
     </div>
 
-    {{! Trips }}
-    <div class="relative flex justify-between items-center px-20 pb-2">
+    <div class="relative flex justify-between items-center px-4 md:px-12 2xl:px-20 pb-2">
       {{#each trips}}
       <button class="trip-link text-lg transition text-gray-400" data-index="{{@index}}">
         {{this.title}}
@@ -74,30 +74,30 @@
 
 
     {{! Trip card }}
-    <div class="text-center flex items-end justify-center gap-32 relative z-10">
+    <div class="text-center md:flex md:items-start xl:items-end justify-center gap-32 relative z-10 md:px-6 xl:px-0 ">
 
       {{!-- Image --}}
-      <div class="w-1/2 max-w-md aspect-[486/607]">
+      <div class="md:w-1/2 max-w-md aspect-[486/607]">
         <img id="trip-img" class="w-full h-full object-cover rounded-xl" src="{{trips.[0].imgUrl}}" alt="Trip destiny">
       </div>
 
       {{!-- Description --}}
-      <div class="space-y-16 flex flex-col items-start w-1/2 pb-16">
-        <h3 id="trip-heading" class="text-[65px] font-bold"></h3>
-        <p id="trip-content" class="text-[17px] mt-2 max-w-[470px]"></p>
+      <div class="space-y-4 md:space-y-16 flex flex-col items-center md:items-start md:w-1/2 pb-16">
+        <h3 id="trip-heading" class="font-bold mt-8 md:mt-0"></h3>
+        <p id="trip-content" class="max-w-[470px]"></p>
         <button
           class="relative bg-secondary uppercase w-[282px] h-[65px] py-4 rounded-full font-bold shadow-[0_10px_25px_rgba(34,211,238,0.25)] menu-button">See
           our latest offer</button>
       </div>
 
-      <div class="absolute flex flex-col items-start top-[14rem] xl:-left-8 2xl:left-0 text-2xl">
+      <div class="hidden absolute md:flex flex-col items-start md:top-[10rem] xl:top-[14rem] md:left-0 xl:-left-8 2xl:left-0 text-2xl">
         <img src="/images/GimmickLine.png" alt="">
         <p id="trip-id" class="font-bold text-secondary mb-2"></p>
         <p id="trip-snippet" class="uppercase font-bold tracking-widest"></p>
       </div>
 
       {{!-- Socials --}}
-      <div class="absolute right-4 flex flex-col items-start gap-5">
+      <div class="hidden absolute right-4 xl:flex flex-col items-start gap-5">
         <div>
           <p class="uppercase font-bold">Share it:</p>
         </div>
@@ -123,9 +123,9 @@
         </div>
         <img src="/images/socials-line.png" alt="Socials underline" class="absolute -right-3 -bottom-6">
       </div>
-      <img src="/images/Dots.png" alt="Dots" class="absolute xl:-left-7 2xl:left-7 xl:-bottom-14 2xl:-bottom-14 -z-10">
+      <img src="/images/Dots.png" alt="Dots" class="absolute hidden xl:block xl:-left-7 2xl:left-7 xl:-bottom-14 2xl:-bottom-14 -z-10">
     </div>
-  </main>
+  </section>
 
 
   {{!-- About us --}}

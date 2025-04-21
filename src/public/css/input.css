@@ -84,6 +84,10 @@ p {
   }
 }
 
+/* #trip-content {
+  margin-top: 12px !important;
+} */
+
 
 .header-fade {
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
