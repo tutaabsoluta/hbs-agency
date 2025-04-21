@@ -20,8 +20,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Main route
-
-
 app.get('/', (req, res) => {
   const trips = [
     { id: 1 ,title: "Chill Adventure",snippet: "Grand Dunes Landscape", description: "Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id fringilla arcu condimentum fames. Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis", imgUrl: "/images/chill-adventure.png" },
@@ -34,14 +32,14 @@ app.get('/', (req, res) => {
   
   
   res.render('home', {
-    title: 'Node.js con Handlebars y Tailwind',
+    title: 'Night Trips',
     trips: trips // Pasar los objetos completos con título, descripción e imagen
   });
 });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  // console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
 
 

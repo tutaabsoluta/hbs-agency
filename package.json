@@ -6,7 +6,7 @@
   "scripts": {
     "build:css": "tailwindcss -i ./src/public/css/input.css -o ./src/public/css/output.css --watch",
     "dev": "concurrently \"npm run build:css -- --watch\" \"nodemon src/app.js\"",
-    "start": "node dist/app.js",
+    "start": "node src/app.js",
     "prestart": "npm run build:css"
   },
   "keywords": [],
