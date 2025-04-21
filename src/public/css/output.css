@@ -709,6 +709,26 @@ video {
   margin-top: -20rem;
 }
 
+.-mt-40 {
+  margin-top: -10rem;
+}
+
+.-mt-32 {
+  margin-top: -8rem;
+}
+
+.-mt-36 {
+  margin-top: -9rem;
+}
+
+.-mt-28 {
+  margin-top: -7rem;
+}
+
+.-mt-20 {
+  margin-top: -5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -813,6 +833,10 @@ video {
   max-width: 20rem;
 }
 
+.max-w-xl {
+  max-width: 36rem;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -824,10 +848,6 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -854,6 +874,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-32 {
   gap: 8rem;
 }
@@ -872,14 +896,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-\[130px\] {
-  gap: 130px;
-}
-
-.gap-16 {
-  gap: 4rem;
 }
 
 .space-y-16 > :not([hidden]) ~ :not([hidden]) {
@@ -1028,10 +1044,6 @@ video {
   line-height: 1;
 }
 
-.text-\[120px\] {
-  font-size: 120px;
-}
-
 .text-\[17px\] {
   font-size: 17px;
 }
@@ -1096,11 +1108,6 @@ video {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
-}
-
-.text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
 }
 
 .text-secondary {
@@ -1233,7 +1240,7 @@ p {
 
 @media (min-width: 1024px) {
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     /* 48px */
   }
 
@@ -1304,10 +1311,6 @@ p {
     flex-direction: row;
   }
 
-  .md\:flex-col {
-    flex-direction: column;
-  }
-
   .md\:items-start {
     align-items: flex-start;
   }
@@ -1318,10 +1321,6 @@ p {
 
   .md\:justify-between {
     justify-content: space-between;
-  }
-
-  .md\:gap-\[130px\] {
-    gap: 130px;
   }
 
   .md\:gap-32 {
@@ -1357,6 +1356,10 @@ p {
   .xl\:-mt-\[100px\] {
     margin-top: -100px;
   }
+
+  .xl\:-mt-28 {
+    margin-top: -7rem;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -1386,5 +1389,13 @@ p {
 
   .\32xl\:-mt-\[200px\] {
     margin-top: -200px;
+  }
+
+  .\32xl\:-mt-\[300px\] {
+    margin-top: -300px;
+  }
+
+  .\32xl\:-mt-52 {
+    margin-top: -13rem;
   }
 }

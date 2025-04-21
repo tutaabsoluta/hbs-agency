@@ -68,7 +68,7 @@ p {
 /* Desktops ≥ 1024px */
 @media (min-width: 1024px) {
   h1 {
-    font-size: 3rem; /* 48px */
+    font-size: 4rem; /* 48px */
   }
   h2 {
     font-size: 2.25rem; /* 36px */
