@@ -1062,6 +1062,11 @@ video {
   color: rgb(203 213 225 / var(--tw-text-opacity, 1));
 }
 
+.text-slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity, 1));
+}
+
 .text-terciary {
   --tw-text-opacity: 1;
   color: rgb(65 234 212 / var(--tw-text-opacity, 1));
@@ -1109,11 +1114,6 @@ html {
 h1, h2, h3, h4 {
   margin: 0 0 0.5em;
   line-height: 1.2;
-}
-
-p {
-  margin: 0 0 1em;
-  max-width: 65ch;
 }
 
 /* Headings Mobile */
@@ -1207,10 +1207,6 @@ p {
   }
 }
 
-/* #trip-content {
-  margin-top: 12px !important;
-} */
-
 .header-fade {
   mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
@@ -1283,10 +1279,6 @@ p {
 
   .md\:max-w-sm {
     max-width: 24rem;
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1387,8 +1379,8 @@ p {
     align-items: flex-end;
   }
 
-  .xl\:gap-16 {
-    gap: 4rem;
+  .xl\:gap-32 {
+    gap: 8rem;
   }
 
   .xl\:px-0 {
